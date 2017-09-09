@@ -1,0 +1,94 @@
+.advanced {
+  position: relative;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 100px;
+  background: transparent url("../img/wave-advanced.png") repeat-y;
+}
+
+.advanced__wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.advanced__item {
+  position: relative;
+  padding-left: 126px;
+  margin-bottom: 45px;
+
+  &--prices {
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 94px;
+      height: 94px;
+      background: transparent url("../img/icon-prices.png") no-repeat;
+    }
+  }
+
+  &--fast {
+    &::before {
+      position: absolute;
+      content: "";
+      top: -15px;
+      left: 0;
+      width: 94px;
+      height: 94px;
+      background: transparent url("../img/icon-on-time.png") no-repeat;
+    }
+  }
+
+  &--relations {
+    &::before {
+      position: absolute;
+      content: "";
+      top: 10px;
+      left: 0;
+      width: 94px;
+      height: 94px;
+      background: transparent url("../img/icon-partnership.png") no-repeat;
+    }
+  }
+
+  &--personal {
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 94px;
+      height: 94px;
+      background: transparent url("../img/icon-personal.png") no-repeat;
+    }
+  }
+
+  &--love {
+    &::before {
+      position: absolute;
+      content: "";
+      top: 10px;
+      left: 0;
+      width: 94px;
+      height: 94px;
+      background: transparent url("../img/icon-heart.png") no-repeat;
+    }
+  }
+}
+
+
+
+.advanced__itemTitle {
+  @include set-font(16px, 20px);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.advanced__itemText {
+  margin-top: 10px;
+  @include set-font(12px, 18px);
+  font-weight: 400;
+  color: #666666;
+}

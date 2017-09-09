@@ -1,0 +1,28 @@
+.footer {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 35px;
+}
+
+.footer__wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  color:  #666666;
+
+  & p {
+    margin-top: 0;
+    margin-bottom: 5px;
+    @include set-font(12px, 14px);
+    font-weight: 400;
+  }
+}
+
+.footer__link {
+  padding-bottom: 5px;
+  color:  #666666;
+  border-bottom:  1px solid $blue;
+}
+
+

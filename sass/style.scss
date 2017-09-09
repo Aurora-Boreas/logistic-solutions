@@ -1,0 +1,25 @@
+// ------------------------------------------ //
+// GLOBAL
+// ------------------------------------------ //
+@import "global/variables.scss";
+@import "global/mixins.scss";
+@import "global/global.scss";
+@import "global/fonts.scss";
+
+// ------------------------------------------ //
+// BLOCKS
+// ------------------------------------------ //
+@import "blocks/page-header.scss";
+@import "blocks/section-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/call-us.scss";
+@import "blocks/about.scss";
+@import "blocks/advanced.scss";
+@import "blocks/plans.scss";
+@import "blocks/spread.scss";
+
+@import "blocks/contacts.scss";
+@import "blocks/btn.scss";
+
+@import "blocks/footer.scss";
+

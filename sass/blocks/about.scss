@@ -1,0 +1,27 @@
+.about {
+  position: relative;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 118px;
+  background-image: url("../img/about-mask.png"),url("../img/tractor.png"), url("../img/wave-about.png") ;
+  background-repeat: no-repeat;
+  background-position: top left, left bottom 20px, left bottom;
+}
+
+.about__wrapper {
+  position: relative;
+  @include wrapper-container();
+}
+
+.about__text {
+  margin-top: 23px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  @include set-font(14px, 22px);
+  font-weight: 200;
+  color: #666666;
+}
+

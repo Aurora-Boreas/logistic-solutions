@@ -1,0 +1,26 @@
+.btn {
+  display: block;
+  color: #66ccff;
+
+  &--prices {
+  margin-left: 11px;
+  margin-right: 11px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  text-align: center;
+  @include set-font(14px, 22px);
+
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  background: transparent url("../img/plans-layer.png") no-repeat;
+  cursor: pointer;
+  }
+
+
+  &--showAttributes {
+    text-decoration: underline;
+    @include set-font(14px, 22px);
+    letter-spacing: 0.8px;
+  }
+}
