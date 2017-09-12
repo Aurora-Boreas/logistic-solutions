@@ -23,4 +23,41 @@
     @include set-font(14px, 22px);
     letter-spacing: 0.8px;
   }
+
+  &--hide,
+  &--view {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding-bottom: 10px;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 17px;
+      height: 5px;
+      bottom: 0;
+      left: calc(50% - 8px);
+      background: transparent url("../img/arrow-down-small.png") no-repeat;
+
+    }
+  }
+
+  &--show-all {
+    position: relative;
+    padding-bottom: 15px;
+    text-align: center;
+    @include set-font(14px, 22px);
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 29px;
+      height: 9px;
+      bottom: 0;
+      left: calc(50% - 14px);
+      background: transparent url("../img/arrow-down-big.png") no-repeat;
+    }
+  }
 }
