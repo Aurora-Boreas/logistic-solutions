@@ -15,6 +15,14 @@
   font-weight: 700;
   background: transparent url("../img/plans-layer.png") no-repeat;
   cursor: pointer;
+
+  @include media(desktop) {
+    width: 445px;
+    margin-top: 55px;
+    margin-left: auto;
+    padding-left: 25px;
+    text-align: left;
+  }
   }
 
 

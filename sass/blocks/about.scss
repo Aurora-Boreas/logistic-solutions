@@ -8,6 +8,23 @@
   background-image: url("../img/about-mask.png"),url("../img/tractor.png"), url("../img/wave-about.png") ;
   background-repeat: no-repeat;
   background-position: top left, left bottom 20px, left bottom;
+
+  @include media(desktop) {
+    width: 1280px;
+    padding-bottom: 220px;
+    background-image: url("../img/about-birds.png"), url("../img/tractor-desktop.png");
+background-repeat: no-repeat;
+background-position: top 105px left 430px, left 50px bottom 290px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 1280px;
+    height: 1100px;
+    top: 475px;
+    background-image: url("../img/waves-desktop.png");
+    }
+  }
 }
 
 .about__wrapper {
@@ -23,5 +40,13 @@
   @include set-font(14px, 22px);
   font-weight: 200;
   color: #666666;
+
+  @include media(desktop) {
+    width: 454px;
+    padding: 0;
+    margin-left: auto;
+    text-align: left;
+    @include set-font(16px, 24px);
+    }
 }
 

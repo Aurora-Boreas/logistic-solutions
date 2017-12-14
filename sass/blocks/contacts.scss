@@ -3,10 +3,11 @@
   width: 320px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 35px;
+  margin-bottom: 35px;
 
   @include media(desktop) {
     padding-bottom: 20px;
+    width: 1280px;
   }
 }
 
@@ -19,6 +20,16 @@
   }
 }
 
+.contacts__items {
+  @include media(desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
 
 .contacts__item {
   display: flex;
@@ -88,6 +99,35 @@
       background: transparent url("../img/photo-5.jpg") no-repeat;
     }
   }
+
+  @include media(desktop) {
+    padding-left: 0;
+    padding-top: 155px;
+    text-align: center;
+
+    &::before {
+      left: calc(50% - 59px);
+    }
+  }
+}
+
+.contacts__location {
+  @include media(desktop) {
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+
+  }
+}
+
+.contacts__map {
+  @include media(desktop) {
+    width: 590px;
+  }
 }
 
 .contacts__itemName {
@@ -115,6 +155,10 @@
 
 .contacts__attributes {
   padding-left: 45px;
+
+  @include media(desktop) {
+    padding-left: 75px;
+  }
 }
 
 .contacts__text {

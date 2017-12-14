@@ -4,18 +4,45 @@
   width: 320px;
   margin: 0 auto;
   padding-bottom: 116px;
+
+  @include media(desktop) {
+    width: 1280px;
+    padding-bottom: 235px;
+    background: #3f77ac url("../img/top-layer-desktop@1x.jpg") no-repeat;
+  }
 }
 
 .page-header__wrapper {
-  @include wrapper-container();
+  //@include wrapper-container();
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @include media(desktop) {
+    padding-left: 53px;
+    width: 100%;
+  }
 }
 
 .page-header__title {
   margin-top: 318px;
   text-align: center;
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 10px;
   font-weight: 200;
   color: #cccccc;
   text-transform: uppercase;
   letter-spacing: 2px;
+
+  @include media(desktop) {
+    position: relative;
+    margin-top: 418px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 9.5px;
+
+    &::after {
+
+    }
+  }
 }

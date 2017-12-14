@@ -5,75 +5,158 @@
   margin-right: auto;
   padding-bottom: 100px;
   background: transparent url("../img/wave-advanced.png") repeat-y;
+
+  @include media(desktop) {
+    width: 1280px;
+    background: none;
+   }
 }
 
 .advanced__wrapper {
   padding-left: 15px;
   padding-right: 15px;
+  @include wrapper-container();
 }
 
+.advanced__items {
+  @include media(desktop) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .advanced__item {
   position: relative;
   padding-left: 126px;
   margin-bottom: 45px;
 
-  &--prices {
-    &::before {
+  &::before {
       position: absolute;
       content: "";
-      top: 0;
-      left: 0;
       width: 94px;
       height: 94px;
-      background: transparent url("../img/icon-prices.png") no-repeat;
+      left: 0;
+      background-color: #ffffff;
+      border-radius: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+
+  @include media(desktop) {
+    width: 260px;
+    margin-left: 65px;
+    margin-right: 65px;
+    padding-left: 0;
+    padding-top: 125px;
+
+    &::before {
+        width: 125px;
+        height: 125px;
+        top: 0;
+        left: calc(50% - 62px);
+        // background-color: #ffffff;
+        // border-radius: 50%;
+        // background-position: center;
+    }
+  }
+
+  &--prices {
+    &::before {
+      // position: absolute;
+      // content: "";
+      top: 0;
+      // left: 0;
+      // width: 94px;
+      // height: 94px;
+      background-image: url("../img/icon-wallet.svg");
+      background-size: 51px 36px;
+
+       @include media(desktop) {
+      //   width: 125px;
+      //   height: 125px;
+      //   background-color: #ffffff;
+      //   border-radius: 50%;
+         // background-image: url("../img/icon-wallet.svg");
+         background-size: 57px 41px;
+      //   background-position: center;
+       }
     }
   }
 
   &--fast {
     &::before {
-      position: absolute;
-      content: "";
+      // position: absolute;
+      // content: "";
       top: -15px;
-      left: 0;
-      width: 94px;
-      height: 94px;
-      background: transparent url("../img/icon-on-time.png") no-repeat;
+      // left: 0;
+      // width: 94px;
+      // height: 94px;
+      background-image: url("../img/icon-clock.svg");
+      background-size: 48px 48px;
+
+      @include media(desktop) {
+        top: 0;
+        // background-image: url("../img/icon-clock.svg");
+        background-size: 57px 57px;
+      }
     }
   }
 
   &--relations {
     &::before {
-      position: absolute;
-      content: "";
+      // position: absolute;
+      // content: "";
       top: 10px;
-      left: 0;
-      width: 94px;
-      height: 94px;
-      background: transparent url("../img/icon-partnership.png") no-repeat;
+      // left: 0;
+      // width: 94px;
+      // height: 94px;
+      background-image: url("../img/icon-handshake.svg");
+      background-size: 61px 39px;
+
+      @include media(desktop) {
+        top: 0;
+        // background-image: url("../img/icon-handshake.svg");
+        background-size: 72px 45px;
+      }
     }
   }
 
   &--personal {
     &::before {
-      position: absolute;
-      content: "";
+      // position: absolute;
+      // content: "";
       top: 0;
-      left: 0;
-      width: 94px;
-      height: 94px;
-      background: transparent url("../img/icon-personal.png") no-repeat;
+      // left: 0;
+      // width: 94px;
+      // height: 94px;
+      background-image: url("../img/icon-package.svg");
+      background-size: 52px 46px;
+
+      @include media(desktop) {
+
+        // background-image: url("../img/icon-package.svg");
+        background-size: 60px 53px;
+      }
     }
   }
 
   &--love {
     &::before {
-      position: absolute;
-      content: "";
+      // position: absolute;
+      // content: "";
       top: 10px;
-      left: 0;
-      width: 94px;
-      height: 94px;
-      background: transparent url("../img/icon-heart.png") no-repeat;
+      // left: 0;
+      // width: 94px;
+      // height: 94px;
+      background-image: url("../img/icon-heart.svg");
+      background-size: 50px 44px;
+
+      @include media(desktop) {
+        top: 0;
+        // background-image: url("../img/icon-heart.svg");
+        background-size: 60px 52px;
+      }
     }
   }
 }
@@ -84,6 +167,11 @@
   @include set-font(16px, 20px);
   font-weight: 700;
   margin-bottom: 10px;
+
+  @include media(desktop) {
+    @include set-font(18px, 24px);
+    text-align: center;
+  }
 }
 
 .advanced__itemText {
@@ -91,4 +179,10 @@
   @include set-font(12px, 18px);
   font-weight: 400;
   color: #666666;
+
+  @include media(desktop) {
+        @include set-font(14px, 20px);
+        font-weight: 200;
+        text-align: center;
+      }
 }
