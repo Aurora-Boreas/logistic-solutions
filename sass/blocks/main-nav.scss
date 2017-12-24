@@ -3,3 +3,47 @@
   top: 207px;
   right: 0;
 }
+
+.main-nav__list {
+  @include media(desktop) {
+    font-size: 0;
+
+    &--header a {
+      // padding-right: 28px;
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+
+    &--header li {
+      text-align: right;
+    }
+  }
+}
+
+.main-nav__link {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  // background-image: url("../img/menu.svg");
+  // background-repeat: no-repeat;
+  // background-position: top right;
+
+  &--active .main-nav__icon {
+    fill: #9ed1ff;
+  }
+}
+
+.main-nav__icon {
+  position: relative;
+  bottom: -5px;
+  margin-left: 28px;
+  fill: #ffffff;
+
+  &--about,
+  &--plans,
+  &--contacts {
+    fill: #eaf2fc;
+  }
+}
+
